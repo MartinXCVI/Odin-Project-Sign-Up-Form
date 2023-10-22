@@ -64,7 +64,7 @@ h2, h3, h4, h5, h6, p {
 	#form-container {
 		width: 100%;
 		display: flex; flex-direction: column; justify-content: center; align-items: center;
-		background-color: hsl(0, 0%, 88%);
+		background-color: hsl(0, 0%, 89%);
 		padding-top: 1em;
 		padding-bottom: 1em;
 	}
@@ -99,7 +99,7 @@ h2, h3, h4, h5, h6, p {
 	.fields-wrapper {
 		width: 100%;
 		display: flex; flex-direction: column; justify-content: center; align-items: center;
-		background-color: whitesmoke;
+		background-color: hsl(0, 0%, 97%);
 		margin-bottom: 1em;
 	}
 
@@ -299,3 +299,103 @@ h2, h3, h4, h5, h6, p {
 }
 
 /*------------------END: 960px------------------*/
+
+/*--------------------1024px--------------------*/
+
+@media all and (min-width: 1024px) {
+
+	#container {
+		height: 100vh;
+		padding-top: 0;
+		align-items: flex-start;
+		background-position: center;
+		background-size: cover;
+	}
+
+	#banner {
+		position: absolute;
+		bottom: 50%;
+		z-index: 10;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+
+	.logo-fig, .odin-title {
+		position: relative;
+		left: 20%;
+	}
+
+	.subtitles-section h2 {
+		width: 100%;
+	}
+
+	#form-container {
+		width: 45%;
+		height: 100vh;
+		z-index: 100;
+	}
+
+	.field-container {
+		padding-top: 1.4em;
+		padding-bottom: 0.9em;
+	}
+
+}
+
+/*------------------END: 1024px-----------------*/
+
+/*--------------------1200px--------------------*/
+
+@media all and (min-width: 1200px) {
+
+	.subtitles-section, .fields-wrapper {
+		margin-bottom: 3em;
+	}
+
+	#submit-btn {
+		margin-bottom: 2em;
+	}
+
+	.field-container {
+		padding-top: 1.8em;
+		padding-bottom: 1.3em;
+	}
+
+	#submit-btn {
+		width: 40%;
+	}
+
+}
+
+/*------------------END: 1200px-----------------*/
+
+/*--------------------1366px--------------------*/
+
+@media all and (min-width: 1366px) {
+
+	#form-container {
+		width: 47%;
+	}
+
+	.logo-fig {
+		width: 4%;
+	}
+
+	.field-container {
+		padding-top: 1.3em;
+		padding-bottom: 0.9em;
+	}
+}
+
+/*------------------END: 1366px-----------------*/
+
+/*--------------------1440px--------------------*/
+
+@media all and (min-width: 1440px) {
+
+	#banner {
+		bottom: 50.9%;
+	}
+
+}
+
+/*------------------END: 1440px-----------------*/
