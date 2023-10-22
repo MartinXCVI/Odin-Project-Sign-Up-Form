@@ -1,0 +1,301 @@
+* {
+   border: 0;
+   margin: 0;
+   padding: 0;
+}
+
+/*---------------------FONTS--------------------*/
+
+@font-face {
+	font-family: 'Norse';
+	src: url(../fonts/Norse-Bold.otf);
+ }
+
+/*----------------GENERAL CSS-------------------*/
+
+body {
+	background-color: whitesmoke;
+}
+
+h2, h3, h4, h5, h6, p {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*--------------------320px---------------------*/
+/*------------------END: 320px------------------*/
+
+@media all and (min-width: 320px) {
+
+	#container {
+		width: 100%;
+		display: flex; flex-direction: column; justify-content: center; align-items: center;
+		background-image: url(../img/landscape-background-img.jpg);
+		background-position: left top;
+		background-size: contain;
+		background-repeat: no-repeat;
+		padding-top: 9em;
+	}
+
+	#banner {
+		width: 100%;
+		display: flex; flex-direction: row; justify-content: center; align-items: center;
+		background-color: #000000;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		position: relative;
+	}
+
+	.logo-fig {
+		width: 10%;
+		position: relative;
+	}
+
+	#odin-logo {
+		width: 100%;
+	}	
+
+	h1 {
+		font-family: 'Norse' !important;
+		color: white;
+		font-size: 2.5em;
+		position: relative;
+	}
+
+	#form-container {
+		width: 100%;
+		display: flex; flex-direction: column; justify-content: center; align-items: center;
+		background-color: hsl(0, 0%, 88%);
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	.subtitles-section {
+		width: 90%;
+		margin-bottom: 1em;
+	}
+
+	.sign-up-subtitle {
+		margin-bottom: 0.5em;
+	}
+
+	#form-container h2 {
+		font-size: 1.2em;
+		margin-bottom: 0.2em;
+	}
+
+	#form-container h3 {
+		font-size: 1em;
+	}
+
+	.subtitle {
+		font-weight: 500;
+	}
+
+	#formu {
+		width: 100%;
+		display: flex; flex-direction: column; justify-content: center; align-items: center;
+	}
+
+	.fields-wrapper {
+		width: 100%;
+		display: flex; flex-direction: column; justify-content: center; align-items: center;
+		background-color: whitesmoke;
+		margin-bottom: 1em;
+	}
+
+	.field-container {
+		width: 90%;
+		padding-top: 1em;
+		padding-bottom: 0.5em;
+	}
+
+	.form-subtitle {
+		margin-bottom: 1em;
+	}
+
+	.field-inputs {
+		width: 100%;
+		display: flex; flex-direction: column; justify-content: center; align-items: center;
+	}
+
+	.divisions {
+		width: 100%;
+		display: flex; flex-direction: column; justify-content: center; align-items: left;
+		margin-bottom: 1em;
+	}
+
+	.divisions label {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 0.7em;
+		letter-spacing: 0.1em;
+		margin-bottom: 0.2em;
+	}
+
+	.divisions input {
+		border: 1px solid lightgray;
+		border-radius: 0.3em;
+		padding-left: 0.5em;
+	}
+
+	.btn-section {
+		width: 90%;
+		display: flex; flex-direction: column; justify-content: center; align-items: center;
+	}
+
+	#submit-btn {
+		width: 100%;
+		background-color: #596D48;
+		color: white;
+		padding-top: 0.6em;
+		padding-bottom: 0.6em;
+		margin-bottom: 0.7em;
+		border-radius: 0.5em;
+		box-shadow: 0em 0.15em 0.2em 0em black;
+	}
+
+	.btn-section p {
+		font-size: 0.8em;
+	}
+
+	a {
+		color: #596D48;
+	}
+
+}
+
+/*------------------END: 320px------------------*/
+
+/*--------------------320px---------------------*/
+
+@media all and (min-width: 480px) {
+
+	#container {
+		padding-top: 12em;
+	}
+
+	.logo-fig {
+		width: 9%;
+	}
+
+	.subtitles-section, .field-container, .btn-section {
+		width: 85%;
+	}
+
+	#submit-btn {
+		width: 75%;
+	}
+
+}
+
+/*------------------END: 480px------------------*/
+
+/*--------------------576px---------------------*/
+
+@media all and (min-width: 576px) {
+
+	#container {
+		padding-top: 15em;
+	}
+
+	.logo-fig {
+		width: 7%;
+	}
+
+	.subtitles-section, .field-container, .btn-section {
+		width: 80%;
+	}
+
+	#submit-btn {
+		width: 60%;
+	}
+
+}
+
+/*------------------END: 576px------------------*/
+
+/*--------------------768px---------------------*/
+
+@media all and (min-width: 768px) {
+
+	#container {
+		padding-top: 18em;
+	}
+
+	#banner {
+		padding-top: 0.7em;
+		padding-bottom: 0.7em;
+	}
+	
+	#form-container {
+		padding-top: 1.2em;
+		padding-bottom: 1.5em;
+	}
+
+	.logo-fig {
+		width: 5%;
+	}
+
+	.fields-wrapper {
+		margin-bottom: 1.5em;
+	}
+
+	.subtitles-section, .field-container, .btn-section {
+		width: 80%;
+	}
+
+	.divisions input {
+		padding-top: 0.3em;
+		padding-bottom: 0.3em;
+	}
+
+	#submit-btn {
+		width: 50%;
+		padding-top: 0.8em;
+		padding-bottom: 0.8em;
+	}
+
+}
+
+/*------------------END: 768px------------------*/
+
+/*--------------------960px---------------------*/
+
+@media all and (min-width: 960px) {
+
+	#container {
+		padding-top: 23em;
+	}
+
+	#banner {
+		padding-top: 0.7em;
+		padding-bottom: 0.7em;
+	}
+	
+	.logo-fig {
+		width: 5%;
+	}
+
+	.subtitles-section h2 {
+		width: 70%;
+	}
+
+	.subtitles-section, .field-container, .btn-section {
+		width: 80%;
+	}
+
+	.field-inputs {
+		flex-direction: row; justify-content:  space-between;
+		flex-wrap: wrap;
+	}
+
+	.divisions {
+		width: 45%;
+	}
+
+	#submit-btn {
+		width: 35%;
+	}
+
+}
+
+/*------------------END: 960px------------------*/

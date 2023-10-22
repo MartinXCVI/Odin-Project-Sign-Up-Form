@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!---Google font "Roboto" Weight: (100 to 900) {font-family: 'Roboto', sans-serif;}--->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<!------CSS Stylesheet------->
+	<link rel="stylesheet" href="css/style.css">
+  <title>Odin Project: Sign Up Form</title>
+</head>
+<body>
+	<!---Main content--->
+	<main>
+		<!---Container with background img--->
+		<section id="container">
+			<!---Odin Banner--->
+			<section id="banner">
+				<figure class="logo-fig">
+					<img id="odin-logo" src="img/odin-logo.png" alt="Odin project logo">
+				</figure>
+				<h1>ODIN PROJECT</h1>
+			</section>
+
+			<!---Formulary section--->
+			<section id="form-container">
+				<section class="subtitles-section">
+					<h2 class="subtitle">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h2>
+					<h3 class="subtitle sign-up-subtitle">Sign up <em>now</em> to get started.</h3>
+					<h3 class="subtitle">You <em>know</em> you want to.</h3>
+				</section>
+				
+				<!----Formulary---->
+				<form action="#" method="#" id="formu">
+					<section class="fields-wrapper">
+						<fieldset class="field-container">
+							<h4 class="form-subtitle">Let's do this!</h4>
+							<!---Field with inputs--->
+							<fieldset class="field-inputs">
+								<!---FIRST NAME section--->
+								<section class="divisions">
+									<label for="user-first-name">FIRST NAME:</label>
+									<input type="text" name="user-firstname" id="user-first-name">
+								</section>
+								<!---LAST NAME section--->
+								<section class="divisions">
+									<label for="user-last-name">LAST NAME:</label>
+									<input type="text" name="user-lastname" id="user-last-name">
+								</section>
+								<!---EMAIL section--->
+								<section class="divisions">
+									<label for="user-email">EMAIL:</label>
+									<input type="email" name="email-user" id="user-email">
+								</section>
+								<!---PHONE number section--->
+								<section class="divisions">
+									<label for="phone-number">PHONE NUMBER:</label>
+									<input name="phone-num" id="phone-number" type="number">
+								</section>
+								<!---PASSWORD section--->
+								<section class="divisions">
+									<label for="user-password">PASSWORD:</label>
+									<input name="user-pass" id="user-password" type="password">
+								</section>
+								<!---CONFIRM PASSWORD section-->
+								<section class="divisions">
+									<label for="pass-confirm">CONFIRM PASSWORD:</label>
+									<input type="password" name="user-confirm-pass" id="pass-confirm">
+								</section>
+							</fieldset>
+						</fieldset>
+					</section>
+					<!---End of form's fields wrapper--->
+					<section class="btn-section">
+						<input type="submit" id="submit-btn">
+						<p>Already have an account? <a href="#">Log in<a>.</p>
+					</section>
+					
+				</form>
+				<!---END: Formulary--->
+
+			</section>
+			<!---END: Form container-->
+		</section>
+		<!---END: main's container--->
+	</main>
+</body>
+</html>
