@@ -21,6 +21,33 @@ h2, h3, h4, h5, h6, p {
 	font-family: 'Roboto', sans-serif;
 }
 
+.subtitles-section, .form-subtitle {
+	color: #303030;
+}
+
+.divisions input {
+	color: #596D48;
+}
+
+::-webkit-input-placeholder {
+	color: rgb(170, 170, 170);
+}
+
+/*-----------------HOVER/FOCUS/ACTIVE------------------*/
+
+.divisions input:focus {
+	outline: none;
+	border: 2px solid #596D48;
+	box-shadow: 0.2em 0.2em 0.3em darkgray;
+}
+
+#submit-btn:active {
+	box-shadow: none;
+	transform: translateY(5px);
+}
+
+/*----------------------------------------------*/
+
 /*--------------------320px---------------------*/
 /*------------------END: 320px------------------*/
 
@@ -317,6 +344,11 @@ h2, h3, h4, h5, h6, p {
 		bottom: 50%;
 		z-index: 10;
 		background-color: rgba(0, 0, 0, 0.6);
+	}
+
+	#banner:hover {
+		background-color: rgba(0, 0, 0, 0.8);
+		transition: 0.5s;
 	}
 
 	.logo-fig, .odin-title {
