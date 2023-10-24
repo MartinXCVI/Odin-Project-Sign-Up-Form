@@ -17,6 +17,15 @@ body {
 	background-color: whitesmoke;
 }
 
+.error {
+  border: 2px solid red !important;
+}
+
+.error-container {
+  font-weight: 400;
+  color: red;
+}
+
 h2, h3, h4, h5, h6, p {
 	font-family: 'Roboto', sans-serif;
 }
@@ -162,6 +171,12 @@ h2, h3, h4, h5, h6, p {
 		border: 1px solid lightgray;
 		border-radius: 0.3em;
 		padding-left: 0.5em;
+		padding-top: 0.15em;
+		padding-bottom: 0.15em;
+	}
+
+	.error-container {
+		font-size: 0.8em;
 	}
 
 	.btn-section {
@@ -369,6 +384,10 @@ h2, h3, h4, h5, h6, p {
 	.field-container {
 		padding-top: 1.4em;
 		padding-bottom: 0.9em;
+	}
+
+	.error-container {
+		font-size: 0.9em;
 	}
 
 }

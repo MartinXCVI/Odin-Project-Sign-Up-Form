@@ -33,7 +33,7 @@
 				</section>
 				
 				<!----Formulary---->
-				<form action="#" method="#" id="formu">
+				<form action="" method="post" id="formu">
 					<section class="fields-wrapper">
 						<fieldset class="field-container">
 							<h4 class="form-subtitle">Let's do this!</h4>
@@ -52,24 +52,25 @@
 								<!---EMAIL section--->
 								<section class="divisions">
 									<label for="user-email">EMAIL:</label>
-									<input type="email" name="email-user" id="user-email" placeholder="Your e-mail here." required>
+									<input type="email" class="usermail" name="email-user" id="user-email" placeholder="Your e-mail here." required>
 								</section>
 								<!---PHONE number section--->
 								<section class="divisions">
 									<label for="phone-number">PHONE NUMBER:</label>
-									<input name="phone-num" id="phone-number" type="number" placeholder="Your phone number here." required>
+									<input name="phone-num" class="phonenum" id="phone-number" type="number" placeholder="Your phone number here." required>
 								</section>
 								<!---PASSWORD section--->
 								<section class="divisions">
 									<label for="user-password">PASSWORD:</label>
-									<input name="user-pass" id="user-password" type="password" placeholder="Your password here." maxlength="16"required>
+									<input name="user-pass" class="mypass" id="user-password" type="password" placeholder="Your password here." maxlength="16"required>
 								</section>
 								<!---CONFIRM PASSWORD section-->
 								<section class="divisions">
 									<label for="pass-confirm">CONFIRM PASSWORD:</label>
-									<input type="password" name="user-confirm-pass" id="pass-confirm" placeholder="Repeat your password here, please." maxlength="16" required>
+									<input type="password" class="passconfirm" name="user-confirm-pass" id="pass-confirm" placeholder="Repeat your password here, please." maxlength="16" required>
 								</section>
 							</fieldset>
+							<p class="error-container"></p>
 						</fieldset>
 					</section>
 					<!---End of form's fields wrapper--->
@@ -86,5 +87,8 @@
 		</section>
 		<!---END: main's container--->
 	</main>
+
+<!----JavaScript files---->
+<script src="js/formulary.js"></script>
 </body>
 </html>
